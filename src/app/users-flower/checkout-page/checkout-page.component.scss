@@ -1,0 +1,15 @@
+.box-checkout{
+  width: 100%;
+  .checkout{
+    width: 60%;
+    margin: 0 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.table-flower{
+  .image{
+    width: 100px;
+    height: 100px;
+  }
+}

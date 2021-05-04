@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "9155ec65-f133-472a-a045-db428d500631"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -118,6 +121,11 @@
           }
         }
       }
+    }
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
     }
   },
   "defaultProject": "flowerApp"

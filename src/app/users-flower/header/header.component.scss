@@ -1,0 +1,45 @@
+.header{
+  width: 100%;
+  &--first{
+    width: 60%;
+    margin: 0 20%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    .shop-name{
+      .title{
+        margin: 5px 0;
+        font: italic small-caps bold 22px/30px Georgia, serif;
+        color: hotpink;
+      }
+    }
+    .search-bar {
+      width: 90%;
+      .search-input{
+        padding: 8px;
+        border: 2px solid grey;
+        outline: none;
+        border-radius: 5px;
+        width: 100%;
+      }
+    }
+    .list-icon .fas{
+      padding-left: 20px;
+      margin: 5px 0;
+    }
+  }
+  &--second{
+    .menu{
+      width: 60%;
+      margin-left: 20%;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      border-bottom: 1px solid grey;
+      border-top: 1px solid grey;
+      &--item{
+        list-style-type: none;
+        padding: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<div class="box-cart">
+  <h1 class="cart-title"> Your shopping bag</h1>
+  <div class="cart">
+    <div class="table--header">
+      <div class="col id">Id</div>
+      <div class="col description">Description</div>
+      <div class="col price">Price</div>
+      <div class="col quantity"> Quantity</div>
+      <div class="col delete"> Action</div>
+    </div>
+    <div class="table--body" *ngFor="let flower of flowers">
+      <div class="col id">{{flower.id}}</div>
+      <div class="col description">
+        <img src="{{flower.image}}" class="image">
+        <h3 class="name"> {{flower.name}}</h3>
+      </div>
+      <div class="col price">{{flower.price}}</div>
+      <div class="col quantity"><button type="button" class="btn minus">+</button>{{quantity}} <button type="button" class="btn plus">-</button></div>
+      <div class="col delete"> <button class="btn-delete"><i class="fas fa-minus-circle"></i></button></div>
+    </div>
+    <div class="table--totalPrice">
+      <p> Total price: 100000 đ</p>
+    </div>
+    <div class="table--shopping-checkout">
+      <button type ="submit" class="btn green">Back shopping</button>
+      <button type ="submit" class="btn red" routerLink="/checkout">Checkout</button>
+    </div>
+  </div>
+</div>
