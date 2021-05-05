@@ -12,7 +12,7 @@ export class ListFlowersComponent implements OnInit {
   constructor( public flowerService: FlowersService) { }
 
   ngOnInit(): void {
-  this.flowers = this.flowerService.getListFolwer();
+  this.flowers = this.flowerService.getListFlower();
   }
 
 }

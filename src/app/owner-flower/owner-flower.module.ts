@@ -11,7 +11,7 @@ import { FlowersComponent } from './flowers/flowers.component';
 import {listRouter} from './owner.router';
 import {RouterModule} from '@angular/router';
 import { OrdersComponent } from './orders/orders.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 
@@ -34,7 +34,8 @@ import {ReactiveFormsModule} from '@angular/forms';
   imports: [
     CommonModule,
     RouterModule.forRoot(listRouter),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class OwnerFlowerModule { }

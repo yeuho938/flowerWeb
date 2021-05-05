@@ -33,7 +33,16 @@ export class OrdersService {
   ];
   constructor() {
   }
-  getAllOrders(){
+  getAllOrders(): Order[]{
     return this.orders;
+  }
+  getOrderById(id: number): any{
+    let getId = null;
+    for (const item of this.orders) {
+      if (item.id === id){
+        getId = item;
+      }
+    }
+    return getId;
   }
 }

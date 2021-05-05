@@ -10,35 +10,20 @@ export class CartService {
 
   constructor() {
   }
-  items: Cart[];
+  items: Cart[] = new Array();
+
   quantity = 0;
   id = 0;
+  idFlower: number;
   flower: Cart[];
-  // tslint:disable-next-line:typedef
-  addToCart(id: number) {
-    this.quantity++;
-    this.id++;
+  addToCart(cart: Cart): void {
+    this.items.push(cart);
   }
-  // addToCart(id: number) {
-  //   if (this.items.length > 0) {
-  //     // tslint:disable-next-line:prefer-for-of
-  //     for (let i = 0; i < this.items.length; i++) {
-  //       if (this.items[i].id === product.id) {
-  //         this.quantity++;
-  //       } else {
-  //         this.items.push(product);
-  //       }
-  //     }
-  //   } else {
-  //     this.items.push(product);
-  //   }
-  //
-  // }
-  getItems() {
+  getItems(): Cart[] {
     return this.items;
   }
 
-  clearCart() {
+  clearCart(): Cart[] {
     this.items = [];
     return this.items;
   }

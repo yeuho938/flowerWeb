@@ -10,12 +10,17 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-  h2 {
-    font-size: 26px;
+  .title-list-flower {
+    font-size: 25px;
     margin: 20px 0;
-    text-align: center;
+    background-color: #FFEEEE;
+    padding: 20px 5px;
+    width: 22%;
+    border-radius: 7px;
+    .fas.fa-home:hover{
+      color: #2f89fc;
+      transition: 0.8s all;
+    }
   }
 }
 

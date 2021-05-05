@@ -4,6 +4,7 @@ import {CartComponent} from './cart/cart.component';
 import {OrderUserComponent} from './order-user/order-user.component';
 import {OrderDetailUserComponent} from './order-detail-user/order-detail-user.component';
 import {CheckoutPageComponent} from './checkout-page/checkout-page.component';
+import {OwnerPageComponent} from '../owner-flower/owner-page/owner-page.component';
 
 export const listRouteUser: Routes = [
   {
@@ -31,6 +32,10 @@ export const listRouteUser: Routes = [
   {
     path: 'checkout',
     component: CheckoutPageComponent
+  },
+  {
+    path: 'owner',
+    component: OwnerPageComponent
   }
   // {
   //   path: '**',

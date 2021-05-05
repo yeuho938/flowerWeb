@@ -1,5 +1,5 @@
 export class Cart{
-  id: number;
+  id?: number;
   idFlower: number;
   quantity: number;
   constructor(id: number, idFlower: number, quantity: number) {

@@ -1,5 +1,5 @@
 <div class="listOrder">
-  <h2> List Orders</h2>
+  <h2 class="listOrder--title"> <i class="fas fa-home" routerLink="/home"></i> / List orders</h2>
   <ul class="order-table">
     <li class="table-header">
       <div class="col id">Id</div>
@@ -15,7 +15,8 @@
       <div class="col phone" >{{order.phone}}</div>
       <div class="col address" >{{order.address}}</div>
       <div class="col totalPrice" >{{order.totalPrice}}</div>
-      <div class="col flowerDetail" ><button type="submit" class="btn-danger"><i class="fas fa-eye"></i></button></div>
+      <div class="col flowerDetail" ><button type="submit" class="btn-danger" [routerLink]="['/order', order.id]"><i class="fas fa-eye"></i></button></div>
     </li>
   </ul>
+  <router-outlet></router-outlet>
 </div>

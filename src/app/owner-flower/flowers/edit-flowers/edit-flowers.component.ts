@@ -15,7 +15,7 @@ export class EditFlowersComponent implements OnInit {
   ngOnInit(): void {
     this.getIdBySnapshot();
   }
-  getIdBySnapshot(){
+  getIdBySnapshot(): void {
     const id = (+this.activatedRoute.snapshot.params.id);
     this.flower = this.flowerService.getFlowerById(id);
   }

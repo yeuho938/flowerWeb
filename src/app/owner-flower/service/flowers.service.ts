@@ -57,17 +57,14 @@ export class FlowersService {
     }
   ];
   constructor() { }
-  // tslint:disable-next-line:typedef
-  getListFolwer(){
+  getListFlower(): Flower[]{
     return this.flowers;
   }
-  // tslint:disable-next-line:typedef
-  getFlowerById(id: number){
+  getFlowerById(id: number): any{
       let getId = null;
-    // tslint:disable-next-line:prefer-for-of
-      for (let i = 0; i < this.flowers.length; i++){
-        if (this.flowers[i].id === id){
-          getId = this.flowers[i];
+      for (const item of this.flowers) {
+        if (item.id === id){
+          getId = item;
         }
       }
       return getId;

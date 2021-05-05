@@ -1,1 +1,23 @@
-<p>order-detail works!</p>
+
+<div class="orderDetail">
+  <h2 class="orderDetail--title"> <i class="fas fa-cart-arrow-down" routerLink="/order"></i> / List orders</h2>
+  <h2></h2>
+  <div class="info--user">
+    <h1> <a class="info--number">1</a> User information</h1>
+    <p class="info--name-user"><strong>Name</strong> : {{order.nameUser}}</p>
+    <p class="info--address"> <strong>Address</strong>: {{order.address}}</p>
+    <p class="info--phone"> <strong>Phone</strong>: {{order.phone}}</p>
+  </div>
+  <div class="info--flower">
+    <h1><a class="info--number">2</a> Product information</h1>
+    <p class="info--name-flower"><strong>Name</strong>: {{flower.name}}</p>
+    <p class="info--price"><strong>Price</strong>: {{flower.price| currency: 'VND':true:'1.0'}}</p>
+    <p class="info--quantity"><strong>Quantity</strong>: 12</p>
+    <p class="info--image"><strong>Image</strong>: <img class="info--image" src="{{flower.image}}"></p>
+  </div>
+  <div>
+  </div>
+  <div>
+    <h2 class="totalPrice"> <strong>Tổng tiền </strong>: {{order.totalPrice | currency: 'VND':true:'1.0'}}</h2>
+  </div>
+</div>
